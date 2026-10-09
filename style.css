@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a:hover {
+  color: orange;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+section {
+  padding: 50px 80px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: orange;
+  color: rgb(0, 0, 0);
+  padding: 10px 22px;
+  border-radius: 6px;
+  display: inline-block;
+}
+a.btn:hover {
+  background: darkorange;
+  color: white;
+  transition: 0.5s;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: white;
+}
+
+.navbar a {
+  margin-left: 20px;
+}
+
+.logo {
+  font-size: 28px;
+  color: orange;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.hero-text {
+  width: 45%;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px lightgray;
+}
+
+.card h3 {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.feature div {
+  flex: 1;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.team .box {
+  border: 1px solid lightgray;
+  text-align: center;
+}
+
+.team img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.newsletter input {
+  width: 60%;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  margin: 15px 0;
+}
+
+.newsletter button {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background: darkorange;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  padding: 20px 80px;
+  background: white;
+}
+
+footer .logo img {
+  width: 100px; 
+}
+
+@media (max-width: 700px) {
+  section {
+    padding: 30px 20px;
+  }
+
+  .navbar,
+  footer {
+    padding: 20px;
+  }
+
+  .navbar,
+  .hero,
+  .row,
+  .feature,
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar,
+  footer {
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar a,
+  footer a {
+    margin: 0 8px;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+  }
+}
